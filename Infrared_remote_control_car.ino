@@ -12,15 +12,10 @@ int ENB=5;
 int ABS=130;
 unsigned long RED;
 #define A 16736925
-
 #define B 16754775
-
 #define X 16712445
-
 #define C 16720605
-
 #define D 16761405
-
 
 IRrecv irrecv(receiverpin);
 decode_results results;
@@ -71,6 +66,16 @@ void _mStop()
   digitalWrite(ENB,LOW);
   Serial.println("STOP!");  
 }
+void _stepStop()
+{
+  delay(1000);
+  _mStop();
+}
+void _turnStop()
+{
+  delay(2000);
+  _mStop();
+}
 void setup() {
   // put your setup code here, to run once:
   pinMode(in1,OUTPUT);
@@ -87,38 +92,36 @@ void setup() {
 
 void loop() {
   if (irrecv.decode(&results))
-    { 
-
-      RED=results.value;
-       Serial.println(RED);
-       irrecv.resume();
-    delay(150);
-    if(RED==A)
-  {  
-     _mForward();
-  }
-
-  else if(RED==B)
-  {
-        _mBack();
-  }
-
-  else if(RED==C)
-  {
-        _mleft();
-  }
-
-  else if(RED==D)
-  {
-        _mright();
-   }
-
-
-  else if(RED==X)
   { 
-         _mStop();
-   }
-
-}
+    RED=results.value;
+    Serial.println(RED);
+    irrecv.resume();
+    delay(150);
+    
+    if(RED==A)
+    {  
+      _mBack();
+      _stepStop();
+    }
+    else if(RED==B)
+    {
+      _mForward();
+      _stepStop();
+    }
+    else if(RED==C)
+    {
+      _mright();
+      _turnStop();
+    }
+    else if(RED==D)
+    {
+      _mleft();
+      _turnStop();
+    }
+    else if(RED==X)
+    { 
+      _mStop();
+    }
+  }
 } 
 
