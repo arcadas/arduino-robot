@@ -4,23 +4,29 @@
 
 TODO
 
-[NAVIGATION]
+NAVIGATION
 - move, turn
 - self-driving
 - map
 - position
 - route plan
 - move by plan
-[SENSORS]
+
+SENSORS
 - ultrasonic sensor
-[COMMUNICATION]
+
+COMMUNICATION
 - wi-fi
 - LCD
-[MONITORING]
+
+MONITORING
 - noise level
-[ENERGETICS]
+
+ENERGETICS
 - solar power
-[UNITS]
+
+UNITS
 - vacuum cleaner
-[HARDWARE]
+
+HARDWARE
 - arm
