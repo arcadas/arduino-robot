@@ -2,31 +2,27 @@
 
 ![Elegoo Smart Robot Car](/car.jpg "Elegoo Smart Robot Car")
 
-TODO
+First you need to download the libs from http://www.elegoo.com/ website for Elegoo Smart Robot Car.
 
-NAVIGATION
-- move, turn
-- self-driving
-- map
-- position
-- route plan
-- move by plan
 
-SENSORS
-- ultrasonic sensor
-
-COMMUNICATION
-- wi-fi
-- LCD
-
-MONITORING
-- noise level
-
-ENERGETICS
-- solar power
-
-UNITS
-- vacuum cleaner
-
-HARDWARE
-- arm
+Todo list
+- Navigation
+  - move, turn
+  - self-driving
+  - map
+  - position
+  - route plan
+  - move by plan
+- Sensors
+  - ultrasonic sensor
+- Communication
+  - wi-fi
+  - LCD
+- Monitoring
+  - noise level
+- Energetics
+  - solar power
+- Units
+  - vacuum cleaner
+- Hardware
+  - arm
