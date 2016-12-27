@@ -1,4 +1,4 @@
-# Arduino Based Hobby Robot Project Edit
+# Arduino Based Hobby Robot Project
 
 ![Elegoo Smart Robot Car](/car.jpg "Elegoo Smart Robot Car")
 
