@@ -15,30 +15,32 @@ First you need to download the documentation and base source codes from http://w
 
 ## Arduino Uno
 
-#### Bluetooth
+### Bluetooth
 
 Tutorial: [Cheap 2 Way Bluetooth Connection Between Arduino and PC](http://www.instructables.com/id/Cheap-2-Way-Bluetooth-Connection-Between-Arduino-a/?ALLSTEPS)
 
 Sketches: [/arduino.uno/bluetooth/](/arduino.uno/bluetooth/)
 
-Tested with HC-06 bluetooth device on OSX. Follow above instractions from tutorial and when you connected your HC-06 bluetooth device to Arduino Uno and the sketch is uploaded.
+Tested with HC-06 bluetooth device on OSX. Follow above instractions from tutorial and when you connected your HC-06 bluetooth device to Arduino Uno and the sketch is uploaded. Open iTerm2 app on OSX.
 
-1. Open iTerm2 app on OSX
-2. Check your serial devices: `ls /dev/tty.*`
+Check your serial devices: `ls /dev/tty.*`
 ```sh
  611 crw-rw-rw-  1 root  wheel   18,   0 28 Dec 11:34 /dev/tty.Bluetooth-Incoming-Port
 1273 crw-rw-rw-  1 root  wheel   18,  86 28 Dec 16:27 /dev/tty.HC-06-DevB
 ```
-3. Connect to Arduino over bluetooth by screen: `screen /dev/tty.HC-06-DevB 9600`
-  - Send data from Arduino to PC
-    ```sh
-    Arduino counter: 1
-    Arduino counter: 2
-    ```
-  - Send data to Arduino from PC
-    ```sh
-    Press 1 to turn Arduino pin 13 LED ON or 0 to turn it OFF
-    ```
+
+Connect to Arduino over bluetooth by screen: `screen /dev/tty.HC-06-DevB 9600`.
+
+Send data from Arduino to PC
+```sh
+Arduino counter: 1
+Arduino counter: 2
+```
+Send data to Arduino from PC
+```sh
+Press 1 to turn Arduino pin 13 LED ON or 0 to turn it OFF
+```
+
 Screen help: http://ss64.com/osx/screen.html
 - Kill screen: `CTRL+A K`
 - Detach screen: `CTRL+A D`
@@ -46,25 +48,33 @@ Screen help: http://ss64.com/osx/screen.html
 - Reattach to screen: `screen -r tty.HC-06-DevB`
 
 ![Arduino with Bluetooth A](/readme/bluetooth.a.jpg)
-![Arduino with Bluetooth B](/readme/bluetooth.a.jpg)
+![Arduino with Bluetooth B](/readme/bluetooth.b.jpg)
+
 
 ## Todo list
-##### Navigation
+
+Navigation
 - self-driving
 - map
 - position
 - route plan
 - move by plan
-##### Sensors
+
+Sensors
 - ultrasonic sensor
-##### Communication
+
+Communication
 - wi-fi
 - LCD
-##### Monitoring
+
+Monitoring
 - noise level
-##### Energetics
+
+Energetics
 - solar power
-##### Units
+
+Units
 - vacuum cleaner
-##### Hardware
+
+Hardware
 - arm
