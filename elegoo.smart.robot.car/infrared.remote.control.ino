@@ -1,6 +1,3 @@
-//www.elegoo.com
-//2016.09.12
-
 #include <IRremote.h>
 int receiverpin = 12;
 int in1=9;
@@ -21,7 +18,7 @@ IRrecv irrecv(receiverpin);
 decode_results results;
 
 void _mForward()
-{ 
+{
   digitalWrite(ENA,HIGH);
   digitalWrite(ENB,HIGH);
   digitalWrite(in1,LOW);
@@ -64,7 +61,7 @@ void _mStop()
 {
   digitalWrite(ENA,LOW);
   digitalWrite(ENB,LOW);
-  Serial.println("STOP!");  
+  Serial.println("STOP!");
 }
 void _stepStop()
 {
@@ -92,14 +89,14 @@ void setup() {
 
 void loop() {
   if (irrecv.decode(&results))
-  { 
+  {
     RED=results.value;
     Serial.println(RED);
     irrecv.resume();
     delay(150);
-    
+
     if(RED==A)
-    {  
+    {
       _mBack();
       _stepStop();
     }
@@ -119,9 +116,8 @@ void loop() {
       _turnStop();
     }
     else if(RED==X)
-    { 
+    {
       _mStop();
     }
   }
-} 
-
+}
