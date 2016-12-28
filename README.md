@@ -1,6 +1,6 @@
 # Arduino Based Hobby Robot Project
 
-![Elegoo Smart Robot Car](/readme/car.jpg)
+<img src="/readme/car.jpg" alt="Elegoo Smart Robot Car" width="500" />
 
 First you need to download the documentation and base source codes from http://www.elegoo.com website for Elegoo Smart Robot Car.
 
@@ -47,9 +47,8 @@ Screen help: http://ss64.com/osx/screen.html
 - List screens: `screen -list`
 - Reattach to screen: `screen -r tty.HC-06-DevB`
 
-![Arduino with Bluetooth A](/readme/bluetooth.a.jpg)
-![Arduino with Bluetooth B](/readme/bluetooth.b.jpg)
-
+<img src="/readme/bluetooth.a.jpg" alt="Arduino with Bluetooth" width="200" />
+<img src="/readme/bluetooth.b.jpg" alt="Arduino with Bluetooth" width="208" />
 
 ## Todo list
 
