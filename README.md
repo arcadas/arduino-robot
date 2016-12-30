@@ -19,6 +19,8 @@ Bluetooth remote control with node.js app by SerialPort package, it use standard
 Arduino sketch: [bluetooth.remote.control](/elegoo.smart.robot.car/bluetooth.remote.control)<br/>
 Nodejs app: [bluetooth.remote.control.nodejs](/elegoo.smart.robot.car/bluetooth.remote.control.nodejs/index.js)
 
+Turn on the vehicle, connect the HC-06 bluetooth device to your Macbook (System Preferences/Bluetooth), start the node script by `node index.js` command. Now you can control your car by W,S,A,D + ENTER commands.
+
 #### Lesson 3 Infrared Remote Control Car
 
 Moving by steps: [infrared.remote.control.ino](/elegoo.smart.robot.car/infrared.remote.control.ino)
