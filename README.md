@@ -6,12 +6,26 @@ First you need to download the documentation and base source codes from http://w
 
 ## Elegoo Smart Robot Car
 
-- Lesson 0 Assemble The Car
-- Lesson 1 Make The Car Move
-- Lesson 2 Bluetooth Car
-- Lesson 3 Infrared Remote Control Car ([steps](/elegoo.smart.robot.car/infrared.remote.control.ino))
-- Lesson 4 Obstacle Avoidance Car
-- Lesson 5 Line Tracking Car
+#### Lesson 0 Assemble The Car
+
+#### Lesson 1 Make The Car Move
+
+Note: my car's dc motors direction are mixed, so please check the code before use it.
+
+#### Lesson 2 Bluetooth Car
+
+Bluetooth remote control with node.js app by SerialPort package, it use standard input/output for communication.
+
+Arduino sketch: [bluetooth.remote.control](/elegoo.smart.robot.car/bluetooth.remote.control)<br/>
+Nodejs app: [bluetooth.remote.control.nodejs](/elegoo.smart.robot.car/bluetooth.remote.control.nodejs)
+
+#### Lesson 3 Infrared Remote Control Car
+
+Moving by steps: [infrared.remote.control.ino](/elegoo.smart.robot.car/infrared.remote.control.ino)
+
+#### Lesson 4 Obstacle Avoidance Car
+
+#### Lesson 5 Line Tracking Car
 
 ## Arduino Uno
 
@@ -61,10 +75,6 @@ Navigation
 
 Sensors
 - ultrasonic sensor
-
-Communication
-- wi-fi
-- LCD
 
 Monitoring
 - noise level
