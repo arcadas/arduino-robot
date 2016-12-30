@@ -17,7 +17,7 @@ Note: my car's dc motors direction are mixed, so please check the code before us
 Bluetooth remote control with node.js app by SerialPort package, it use standard input/output for communication.
 
 Arduino sketch: [bluetooth.remote.control](/elegoo.smart.robot.car/bluetooth.remote.control)<br/>
-Nodejs app: [bluetooth.remote.control.nodejs](/elegoo.smart.robot.car/bluetooth.remote.control.nodejs)
+Nodejs app: [bluetooth.remote.control.nodejs](/elegoo.smart.robot.car/bluetooth.remote.control.nodejs/index.js)
 
 #### Lesson 3 Infrared Remote Control Car
 
