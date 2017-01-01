@@ -10,7 +10,7 @@ First you need to download the documentation and base source codes from http://w
 
 #### Lesson 1 Make The Car Move
 
-Note: my car's dc motors direction are mixed, so please check the code before use it.
+Note: I use steps instead of continuously moving.
 
 #### Lesson 2 Bluetooth Car
 
