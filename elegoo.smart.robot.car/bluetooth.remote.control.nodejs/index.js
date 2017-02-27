@@ -10,8 +10,18 @@ port.on('open', function() {
 
     console.log('Connected');
 
-    process.stdin.on('data', function (data) {
-        port.write(data);
+    var stdin = process.stdin;
+    stdin.setRawMode( true );
+    stdin.resume();
+    stdin.setEncoding('utf8');
+
+    stdin.on('data', function (key) {
+        // ctrl-c ( end of text )
+        if ( key === '\u0003' ) {
+            process.exit();
+        }
+        process.stdout.write( key );
+        port.write(key);
     });
 
     port.on('data', function (data) {
