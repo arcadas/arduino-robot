@@ -23,7 +23,14 @@ Turn on the vehicle, connect the `HC-06` bluetooth device to your Macbook (Syste
 
 #### Lesson 3 Infrared Remote Control Car
 
+Arduino software: Sketch -> Include library -> Add .ZIP library -> IRremote.zip
 Moving by steps: [infrared.remote.control.ino](/elegoo.smart.robot.car/infrared.remote.control.ino)
+Linux issue fix:
+```sh
+// avrdude: ser_open(): can't open device "/dev/ttyACM0": Permission denied
+$ sudo usermod -a -G dialout <username>
+$ sudo chmod a+rw /dev/ttyACM0
+```
 
 #### Lesson 4 Obstacle Avoidance Car
 
