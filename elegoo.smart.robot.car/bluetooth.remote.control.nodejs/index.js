@@ -1,7 +1,8 @@
 var serialDeviceName = '/dev/tty.HC-06-DevB'; // ls /dev/tty.*
 var SerialPort = require('serialport');
+var Readline = require('@serialport/parser-readline');
 var port = new SerialPort(serialDeviceName, {
-  parser: SerialPort.parsers.readline('\n')
+  parser: new Readline({ delimiter: '\n'})
 });
 
 console.log('Looking for devices...');
