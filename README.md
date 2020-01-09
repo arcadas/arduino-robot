@@ -79,29 +79,5 @@ Screen help: http://ss64.com/osx/screen.html
 <img src="/readme/bluetooth.a.jpg" alt="Arduino with Bluetooth" width="200" />
 <img src="/readme/bluetooth.b.jpg" alt="Arduino with Bluetooth" width="208" />
 
-## Todo list
-
-Navigation
-- self-driving
-- map
-- position
-- route plan
-- move by plan
-
-Sensors
-- ultrasonic sensor
-
-Monitoring
-- noise level
-
-Energetics
-- solar power
-
-Units
-- vacuum cleaner
-
-Hardware
-- arm
-
 ## Video
 https://www.youtube.com/watch?v=jUqzGy4fTZE
